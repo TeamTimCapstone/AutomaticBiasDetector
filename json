@@ -1,0 +1,8 @@
+<mysql.connector.connection.MySQLConnection object at 0x7f460afcc430>
+('Article',)
+('Bias_Instance_Groups',)
+('Bias_Instances',)
+('Biased_Groups',)
+('Biased_Words',)
+('Users',)
+('Website',)

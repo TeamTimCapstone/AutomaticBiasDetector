@@ -1,0 +1,88 @@
+{
+    "label": "Biased",
+    "article_url": "test.com/article1",
+    "article_bias_confidence": 0.981971800327301,
+    "biased_sentence_count": 13,
+    "bias_info_by_sentence": [
+        {
+            "text": "A 24-year-old graduate student from an Asian American immigrant neighborhood in Brooklyn said linking his community to White supremacy or calling Asians \"White-adjacent\" is an attempt to invalidate their views",
+            "sentence_bias_confidence": 0.6042253375053406,
+            "biased_words": [
+                "invalidate"
+            ]
+        },
+        {
+            "text": " \"It assumes that people from racial, ethnic or religious minority backgrounds \u2014 we can't have our own opinions",
+            "sentence_bias_confidence": 0.9883623719215393
+        },
+        {
+            "text": "\"It's like our opinions have to be approved by big media conglomerates, by academia",
+            "sentence_bias_confidence": 0.9846405982971191
+        },
+        {
+            "text": "Los Angeles Times columnist Erika D",
+            "sentence_bias_confidence": 0.9861897826194763
+        },
+        {
+            "text": " Rolling Stone similarly published an article in December 2022 arguing that Herschel Walker, who was at the time running for U",
+            "sentence_bias_confidence": 0.9429499506950378
+        },
+        {
+            "text": "Elder called the idea that America is systemically racist a lie, \"but it's a lie that Democrats push for stuff like reparations, critical race theory, diversity, equity and inclusion",
+            "sentence_bias_confidence": 0.8893283009529114,
+            "biased_words": [
+                "lie",
+                "lie"
+            ]
+        },
+        {
+            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
+            "sentence_bias_confidence": 0.9655057191848755,
+            "biased_words": [
+                "shameful"
+            ]
+        },
+        {
+            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
+            "sentence_bias_confidence": 0.9655057191848755,
+            "biased_words": [
+                "shameful"
+            ]
+        },
+        {
+            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
+            "sentence_bias_confidence": 0.9655057191848755,
+            "biased_words": [
+                "shameful"
+            ]
+        },
+        {
+            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
+            "sentence_bias_confidence": 0.9655057191848755,
+            "biased_words": [
+                "shameful"
+            ]
+        },
+        {
+            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
+            "sentence_bias_confidence": 0.9655057191848755,
+            "biased_words": [
+                "shameful"
+            ]
+        },
+        {
+            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
+            "sentence_bias_confidence": 0.9655057191848755,
+            "biased_words": [
+                "shameful"
+            ]
+        },
+        {
+            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
+            "sentence_bias_confidence": 0.9655057191848755,
+            "biased_words": [
+                "shameful"
+            ]
+        }
+    ]
+}
