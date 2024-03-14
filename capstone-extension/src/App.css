@@ -1,0 +1,89 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-image: url('../public/worldbackground.jpg'); /* Adjust path as needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 350px; /* Fixed width for popup */
+  height: 500px; /* Fixed height for popup */
+  font-family: 'Madimi One', sans-serif;
+}
+
+.navbar {
+  color: #F4C37B;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  padding: 0 5px;
+} 
+
+.navbar ul li a {
+  color: #F4C37B;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover{
+  border: 2px solid #F4C37B;
+  border-radius: 10px;
+}
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+
+.left-side, .right-side {
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.close-button {
+  color:#F4C37B;
+  background: none;
+  border: none;
+}
+
+.inputlink, .startbutton {
+  border-radius: 20px;
+  margin: 8px 0;
+  padding: 12px 20px;
+}
+
+.inputlink {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.startbutton {
+  background-color: #F4C37B;
+  color: black;
+  box-shadow: 0 4px 8px #F4C37B;
+}
+
+.left-side h1 {
+  color: #F4C37B; /* Your theme's accent color */
+  font-family: "Madimi One", sans-serif;
+  /* ... any other styling for your title ... */
+}
+
+.left-side p {
+  color: white; /* Assuming a light color for readability on a dark background */
+  font-size: large; /* Adjust size as needed */
+  /* ... any other styling for your paragraph ... */
+}
