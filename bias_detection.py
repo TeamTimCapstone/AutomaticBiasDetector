@@ -1,3 +1,4 @@
+import json
 from database_functions import DatabaseFunctions
 from bias_detector import get_bias_info
 
@@ -31,18 +32,35 @@ Elder called the idea that America is systemically racist a lie, "but it's a lie
 "This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy," Miyares said.
 
 """
+def run_algorithm(article_text):
+    article_url = "test.com/article1"
+    dbf = DatabaseFunctions()
+    article_json_string = dbf.json_string_retrieve(article_url)
+
+    if article_json_string == "":
+        print("analyzing")
+        article_json_string = get_bias_info(article_text, article_url)
+        dbf.json_string_insert(article_json_string)
+
+    print("Here is the string")
+    print(article_json_string)
 
 if __name__ == "__main__":
+    # Read input data from stdin if needed
+    input_data = input()
+    # Run the algorithm with input data
+    run_algorithm(input_data)
+# if __name__ == "__main__":
 
-  article_url = "test.com/article1"
+#   article_url = "test.com/article1"
 
-  dbf = DatabaseFunctions()
-  article_json_string = dbf.json_string_retrieve(article_url)
+#   dbf = DatabaseFunctions()
+#   article_json_string = dbf.json_string_retrieve(article_url)
 
-  if article_json_string == "":
-    print("analyzing")
-    article_json_string = get_bias_info(article_text, article_url)
-    dbf.json_string_insert(article_json_string)
+#   if article_json_string == "":
+#     print("analyzing")
+#     article_json_string = get_bias_info(article_text, article_url)
+#     dbf.json_string_insert(article_json_string)
 
-  print("Here is the string")
-  print(article_json_string)
+#   print("Here is the string")
+#   print(article_json_string)
