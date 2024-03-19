@@ -17,6 +17,7 @@ blacklist = [
     'head', 
     'input',
     'script',
+    'style',
     # there may be more elements you don't want, such as "style", etc.
 ]
 
