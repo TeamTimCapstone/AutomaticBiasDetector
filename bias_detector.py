@@ -9,9 +9,11 @@ from transformers import pipeline
 import json
 from database_functions import DatabaseFunctions 
 
+import pickle
+
 # Load NLP and Zero-Shot Classification requirements
-nlp = spacy.load("en_core_web_lg")
-pipe = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
+#nlp = spacy.load("en_core_web_lg")
+#pipe = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
 
 # Thresholds for whether or not bias should be considered for articles and sentences
 # and other information needed for bias detection
@@ -21,7 +23,40 @@ group_bias_threshold = 0.6
 
 def get_bias_info(article_text, article_url, website_url="", groups=["woman", "african", "asian", "lgbt", "hispanic"]):
 
-  groups = ["woman", "african", "asian", "lgbt", "hispanic"]
+  nlp = None
+  pipe = None
+
+  try:
+    with open("nlp.pkl", 'rb') as picklefile:
+      nlp = pickle.load(picklefile)
+
+  except:
+    nlp = spacy.load("en_core_web_lg")
+    
+    try:
+      with open("nlp.pkl", 'wb') as picklefile:
+        pickle.dump(nlp, picklefile)
+
+    except:
+      print("Could not pickle nlp")
+
+  try:
+    with open("pipe.pkl", 'rb') as picklefile:
+      pipe = pickle.load(picklefile)
+
+  except:
+    pipe = pipeline("zero-shot-classification", model="facebook/bart-large-mnli") 
+    
+    try:
+      with open("pipe.pkl", 'wb') as picklefile:
+        pickle.dump(pipe, picklefile)
+
+    except:
+      print("Could not pickle pipe")
+
+    
+
+  # groups = ["woman", "african", "asian", "lgbt", "hispanic"]
   # Variables to hold info on bias of sentences
   article_bias_info = {}
   biased_sentence_info = []

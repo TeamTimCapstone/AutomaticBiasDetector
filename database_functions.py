@@ -102,6 +102,10 @@ class DatabaseFunctions:
     if article_instance != []:
       return
 
+  # Check for no bias; return
+    if data["label"] != "Biased":
+      return 
+
   # Update Website table
     if "website_url" in data:
       # If there is a website included, either make the website or increment the number of articles from the website
