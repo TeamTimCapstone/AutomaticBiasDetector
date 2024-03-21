@@ -98,9 +98,12 @@ class DatabaseFunctions:
   # Check for duplicate article
     self.cursor.execute('SELECT * FROM Article where article_url = "%s";' % (data["article_url"]))
     article_instance = self.cursor.fetchall()
-    print(article_instance)
     if article_instance != []:
       return
+
+  # Check for no bias; return
+    if data["label"] != "Biased":
+      return 
 
   # Update Website table
     if "website_url" in data:
@@ -122,24 +125,28 @@ class DatabaseFunctions:
     self.connection.commit()
 
     for sentence in data["bias_info_by_sentence"]:
-      # Insert each sentence bias info
-      self.cursor.execute('INSERT INTO Bias_Instances (article_url, sentence, bias_rating) VALUES ("%s", "%s", %16.15f)' % (data["article_url"], sentence["text"].replace("\"", "").replace("'", ""), sentence["sentence_bias_confidence"]))
-      self.connection.commit()
+      try:
+        # Insert each sentence bias info
+        self.cursor.execute('INSERT INTO Bias_Instances (article_url, sentence, bias_rating) VALUES ("%s", "%s", %16.15f)' % (data["article_url"], sentence["text"].replace("\"", "").replace("'", ""), sentence["sentence_bias_confidence"]))
+        self.connection.commit()
 
-      self.cursor.execute('SELECT MAX(id) FROM Bias_Instances WHERE article_url = "%s";' % (data["article_url"]))
-      instance_id = self.cursor.fetchall()[0][0]
+        self.cursor.execute('SELECT MAX(id) FROM Bias_Instances WHERE article_url = "%s";' % (data["article_url"]))
+        instance_id = self.cursor.fetchall()[0][0]
      
-      # Insert each group indicated in a sentence
-      if "biased_groups" in sentence:
-        for group in sentence["biased_groups"]:
+        # Insert each group indicated in a sentence
+        if "biased_groups" in sentence:
+          for group in sentence["biased_groups"]:
             self.cursor.execute('INSERT INTO Bias_Instance_Groups (instance_id, biased_group) VALUES (%d, "%s");' % (instance_id, group))
             self.connection.commit()
 
-      # Insert each word indicated in a sentence
-      if "biased_words" in sentence:
-        for word in sentence["biased_words"]:
+        # Insert each word indicated in a sentence
+        if "biased_words" in sentence:
+          for word in sentence["biased_words"]:
             self.cursor.execute('INSERT INTO Biased_Words (instance_id, word) VALUES (%d, "%s");' % (instance_id, word))
             self.connection.commit()
+
+      except:
+        print("database sentence insertion messed up")
     print("inserted")
 
 
