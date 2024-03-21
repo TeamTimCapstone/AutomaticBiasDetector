@@ -8,7 +8,9 @@ from transformers import pipeline
 
 import json
 from database_functions import DatabaseFunctions 
+from web_scraper import scrape
 
+import re
 import pickle
 
 # Load NLP and Zero-Shot Classification requirements
@@ -17,11 +19,11 @@ import pickle
 
 # Thresholds for whether or not bias should be considered for articles and sentences
 # and other information needed for bias detection
-article_bias_threshold = 0.65
-sentence_bias_threshold = 0.6
+article_bias_threshold = 0.8
+sentence_bias_threshold = 0.8
 group_bias_threshold = 0.6
 
-def get_bias_info(article_text, article_url, website_url="", groups=["woman", "african", "asian", "lgbt", "hispanic"]):
+def get_bias_info(article_url, article_text="", website_url="", groups=["woman", "african", "asian", "lgbt", "hispanic"]):
 
   nlp = None
   pipe = None
@@ -61,11 +63,25 @@ def get_bias_info(article_text, article_url, website_url="", groups=["woman", "a
   article_bias_info = {}
   biased_sentence_info = []
   biased_sentence_count = 0
-  
+
+  if article_text == "":
+    try:
+      article_text = scrape(article_url)
+    except:
+      article_bias_info["ERROR"] = "Invalid URL"
+      return json.dumps(article_bias_info)
+
+  dbf = DatabaseFunctions()
+  previous_analysis = dbf.json_string_retrieve(article_url)  
+  if previous_analysis != "":
+    return previous_analysis
+
+  article_text = article_text.replace("\n", "")
+  print(article_text)
   # Classify article bias, find label confidence and if is is classified as biased
   # Characters 0 - 2435 appears to be the sweet spot
   try:
-    article_bias_info = classifier(article_text[0:2000])[0]
+    article_bias_info = classifier(article_text[0:511])[0]
   except:
     article_bias_info = classifier(article_text)[0]
   article_bias_confidence = article_bias_info["score"]
@@ -80,7 +96,6 @@ def get_bias_info(article_text, article_url, website_url="", groups=["woman", "a
     print("Insufficient bias detected.")
     return json.dumps(article_bias_info)
 
-  dbf = DatabaseFunctions()
   website_bias = dbf.get_website_bias_rating(article_url=article_url)
   if website_bias != 0:
     article_bias_info["website_bias_rating"] = website_bias
@@ -94,6 +109,8 @@ def get_bias_info(article_text, article_url, website_url="", groups=["woman", "a
 
     # Clean up sentences
     sentence = sentence.replace("\n", "")
+    sentence = (sentence[:511]) if len(sentence) > 511 else sentence
+    sentence = sentence.strip()
 
     # Classify sentence bias, find label confidence and if is is classified as biased
     sentence_bias_info = classifier(sentence)[0]
@@ -119,7 +136,6 @@ def get_bias_info(article_text, article_url, website_url="", groups=["woman", "a
     # If the sentence has nouns in it, classify what those nouns relate to
     try:
       if len(nouns) > 0:
-        print(len(nouns))
         sentence_group_bias_confidences = pipe(nouns, groups, multi_label=True)
         group_scores = sentence_group_bias_confidences.get("scores")
         group_labels = sentence_group_bias_confidences.get("labels")
@@ -163,4 +179,3 @@ def get_bias_info(article_text, article_url, website_url="", groups=["woman", "a
 
   dbf.json_string_insert(json_bias_data)
   return json_bias_data
-
