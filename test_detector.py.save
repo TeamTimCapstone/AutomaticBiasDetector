@@ -1,0 +1,10 @@
+from bias_detector import get_bias_info
+import time
+
+if __name__ == "__main__":
+
+  start = time.time()
+  print(get_bias_info("https://w.foxnews.com/politics/aoc-takes-heat-over-rico-crime-comment-biden-impeachment-probe-hearing"))
+  end = time.time()
+  print("Total time (seconds) is:")
+  print(end-start)
