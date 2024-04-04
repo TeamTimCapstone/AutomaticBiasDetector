@@ -1,54 +1,33 @@
-
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const { spawn } = require('child_process');
-const axios = require('axios'); // Import axios for making HTTP requests
+const { PythonShell } = require('python-shell');
 
-const hostname = '0.0.0.0';
+//const { get_bias_info } = require('./bias_detector.py'); // Provide the correct path to bias_detector.py
+
+const hostname = '172.31.4.148';
 const port = 5000;
 
-app.use(express.json());
+app.use(express.json()); // Add this line to parse JSON request bodies
 app.use(cors());
 
-function runPythonScript(articleText) {
-  return new Promise((resolve, reject) => {
-    const pythonProcess = spawn('python', ['./bias_detection.py'], { stdio: ['pipe', 'pipe', process.stderr] });
-
-    // Handle stdout data from the Python script
-    pythonProcess.stdout.on('data', (data) => {
-      resolve(data.toString());
-    });
-
-    // Handle errors or script exit
-    pythonProcess.on('error', (error) => {
-        reject(error);
-        });
-    pythonProcess.on('exit', (code) => {
-      if (code !== 0) {
-        reject(new Error(`Python script exited with code ${code}`));
-      }
-    });
-
-    // Pass input data to the Python script through stdin
-    pythonProcess.stdin.write(articleText);
-    pythonProcess.stdin.end();
-  });
-}
-
 app.post('/biasdetector', async (req, res) => {
-  const { text } = req.body; // Extract the URL from query parameters
-  
   try {
-    // Fetch article content from the URL
-    //const articleResponse = await axios.get(url);
-    //const articleText = articleResponse.data;
+    const article_url = req.body;
+    console.log(req.body);
+    console.log(article_url);
+    const pyScriptPath = './bias_detector.py';
+    const functionName = 'get_bias_info';
+    const parameters = [article_url];
 
-    // Call the function to run the Python script with the received article text
-    const output = await runPythonScript(text);
+    // Run the Python script asynchronously
+    const output = await PythonShell
+      .run(pyScriptPath, { args: [functionName, ...parameters] });
+
+    const jsonOutput = JSON.parse(output[0]);
 
     // Send the result back as the response
-    res.json({ result: output });
+    res.json(jsonOutput);
   } catch (error) {
     console.error('Error:', error);
     res.status(500).json({ error: 'An error occurred while running the algorithm' });

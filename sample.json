@@ -1,88 +1,131 @@
 {
     "label": "Biased",
-    "article_url": "test.com/article1",
-    "article_bias_confidence": 0.981971800327301,
-    "biased_sentence_count": 13,
+    "article_url": "https://www.breitbart.com/entertainment/2023/10/31/nolte-guardian-whines-about-incels-embracing-fight-club-1999/",
+    "article_bias_confidence": 0.9915663599967957,
+    "biased_sentence_count": 24,
     "bias_info_by_sentence": [
         {
-            "text": "A 24-year-old graduate student from an Asian American immigrant neighborhood in Brooklyn said linking his community to White supremacy or calling Asians \"White-adjacent\" is an attempt to invalidate their views",
-            "sentence_bias_confidence": 0.6042253375053406,
+            "text": "He mostly side-stepped the many traps, but  the interview  does give you another look at the left\u2019s hostility towards men:  Fight Club became a key text for a contingent of dissatisfied white men that we might call the \u201cmanosphere\u201d: \u201cincels\u201d;\u00a0neo\u2011Nazi fitness clubs;\u00a0the Proud Boys\u00a0(which the Southern Poverty Law Centre once described as an \u201c\u2018alt-right\u2019 fight club\u201d); avowed misogynists and male supremacists in the\u00a0Andrew Tate\u00a0mould",
+            "sentence_bias_confidence": 0.9842482209205627
+        },
+        {
+            "text": "The Fight Club being consumed by today\u2019s aggrieved manosphere is not the same as the film that flopped on its box office release in 1999, or the one that became a campus hit on DVD, he says: \u201cLanguage evolves",
+            "sentence_bias_confidence": 0.8293629884719849,
             "biased_words": [
-                "invalidate"
+                "aggrieved"
             ]
         },
         {
-            "text": " \"It assumes that people from racial, ethnic or religious minority backgrounds \u2014 we can't have our own opinions",
-            "sentence_bias_confidence": 0.9883623719215393
-        },
-        {
-            "text": "\"It's like our opinions have to be approved by big media conglomerates, by academia",
-            "sentence_bias_confidence": 0.9846405982971191
-        },
-        {
-            "text": "Los Angeles Times columnist Erika D",
-            "sentence_bias_confidence": 0.9861897826194763
-        },
-        {
-            "text": " Rolling Stone similarly published an article in December 2022 arguing that Herschel Walker, who was at the time running for U",
-            "sentence_bias_confidence": 0.9429499506950378
-        },
-        {
-            "text": "Elder called the idea that America is systemically racist a lie, \"but it's a lie that Democrats push for stuff like reparations, critical race theory, diversity, equity and inclusion",
-            "sentence_bias_confidence": 0.8893283009529114,
+            "text": "\u201d  When asked if  Fight Club  \u201cwas overtly tapping into this vein of resentful, disempowered masculinity,\u201d Fincher answered: \u201cIt\u2019s impossible for me to imagine that people don\u2019t understand that Tyler Durden is a negative influence",
+            "sentence_bias_confidence": 0.9936256408691406,
             "biased_words": [
-                "lie",
-                "lie"
+                "resentful",
+                "disempowered"
             ]
         },
         {
-            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
-            "sentence_bias_confidence": 0.9655057191848755,
+            "text": "People who can\u2019t understand that, I don\u2019t know how to respond and I don\u2019t know how to help them",
+            "sentence_bias_confidence": 0.9853509664535522
+        },
+        {
+            "text": "\u201d    It\u2019s pretty amazing who the left does and does not empathize with",
+            "sentence_bias_confidence": 0.9938942790031433
+        },
+        {
+            "text": "Hamas can decapitate babies, rape, desecrate, and butcher, and the left is all,  Cease fire! Stop stopping them! Understand their plight!\u00a0 But in a culture where young men are told to ignore their biological wiring and that their very nature (masculinity) is \u201ctoxic,\u201d and that asking a woman out more than once is rape\u2026 In a society where men\u2019s natural instincts to protect and provide have been undermined and made irrelevant by militant feminism, American abundance, and the religion of consumerism\u2026 (My nove",
+            "sentence_bias_confidence": 0.990669846534729,
             "biased_words": [
-                "shameful"
+                "desecrate",
+                "undermined"
             ]
         },
         {
-            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
-            "sentence_bias_confidence": 0.9655057191848755,
+            "text": "Oh, gawd,  please buy  my novel!)  In a country where the natural way men sit has become a sin called \u201cmanspreading,\u201d\u2026 There is no empathy at all",
+            "sentence_bias_confidence": 0.9759983420372009
+        },
+        {
+            "text": "Men are treated like something unnatural, a virus infecting what would otherwise be a perfect system",
+            "sentence_bias_confidence": 0.9897741079330444,
             "biased_words": [
-                "shameful"
+                "unnatural"
             ]
         },
         {
-            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
-            "sentence_bias_confidence": 0.9655057191848755,
+            "text": "The left wants absolutely everyone accommodated in every conceivable way, including sexual fetishists and child molesters, but not us, not men",
+            "sentence_bias_confidence": 0.9937006235122681
+        },
+        {
+            "text": "\ufeff  \u201cI see in Fight Club the strongest and smartest men who\u2019ve ever lived",
+            "sentence_bias_confidence": 0.9708122611045837
+        },
+        {
+            "text": "Advertising has us chasing cars and clothes, working jobs we hate so we can buy shit we don\u2019t need",
+            "sentence_bias_confidence": 0.9793763160705566,
             "biased_words": [
-                "shameful"
+                "chasing",
+                "hate"
             ]
         },
         {
-            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
-            "sentence_bias_confidence": 0.9655057191848755,
+            "text": "Obviously, Durden takes things too far",
+            "sentence_bias_confidence": 0.9182794094085693
+        },
+        {
+            "text": "But how is that extreme wish-fulfillment any different from cathartic, female revenge movies like  Carrie  (1976),  Thelma and Louise  (1991),\u00a0 Kill Bill  (2003),  The Girl with the Dragon Tattoo  (2009),  I Spit on Your Grave  (1978),  The Beguiled  (1971), or  Peppermint  (2018)? In a moral vacuum, they are no different",
+            "sentence_bias_confidence": 0.9803482890129089
+        },
+        {
+            "text": "By the way, I love and own all those movies",
+            "sentence_bias_confidence": 0.9948031306266785
+        },
+        {
+            "text": "The left can feel for terrorists, but not a group of young men quickly advancing into middle age whose empty, Hellbound lives revolve around Marvel movies, online porn, and marijuana",
+            "sentence_bias_confidence": 0.9921272993087769,
             "biased_words": [
-                "shameful"
+                "Hellbound"
             ]
         },
         {
-            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
-            "sentence_bias_confidence": 0.9655057191848755,
+            "text": "My heart breaks for these guys",
+            "sentence_bias_confidence": 0.987338662147522
+        },
+        {
+            "text": "But America\u2019s elite culture is built around keeping them down",
+            "sentence_bias_confidence": 0.9856282472610474,
             "biased_words": [
-                "shameful"
+                "elite"
             ]
         },
         {
-            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
-            "sentence_bias_confidence": 0.9655057191848755,
+            "text": "Tyler Durden may not be a hero, but at least he recognizes that",
+            "sentence_bias_confidence": 0.9876582026481628
+        },
+        {
+            "text": "In the vernacular of these stupid times,  he sees them",
+            "sentence_bias_confidence": 0.9936005473136902,
             "biased_words": [
-                "shameful"
+                "stupid"
             ]
         },
         {
-            "text": "\"This is really shameful conduct by the legacy media to suddenly say, because a new emerging voting bloc in the United States is starting to shift away from the Democratic Party, that somehow that means it's White supremacy,\" Miyares said",
-            "sentence_bias_confidence": 0.9655057191848755,
-            "biased_words": [
-                "shameful"
-            ]
+            "text": "John Nolte\u2019s debut novel  Borrowed Time  (Bombardier Books) is available  today",
+            "sentence_bias_confidence": 0.9051886796951294
+        },
+        {
+            "text": "Entertainment David Fincher feminism Fight Club John Nolte The Guardian            COMMENTS  Please  let us know  if you're having issues with commenting",
+            "sentence_bias_confidence": 0.9500110745429993
+        },
+        {
+            "text": "MainW       SOCIAL             MOST POPULAR *** Election Night Livewire *** Trump-Backed Bernie Moreno Seeks Ohio Win AOC Melts Down After\u00a0Bobulinski Said Joe Biden Committed Crimes\u00a0 TPUSA says U",
+            "sentence_bias_confidence": 0.8035832643508911
+        },
+        {
+            "text": "of Memphis Tried to Sabotage Their Rittenhouse Event Russia Rains Missiles Down on Kyiv in Major Strike Exclusive \u2014 Donald Trump: \u2018Migrant Crime\u2019 Is New Category of Crime in USA Carville: Biden Should Let Surrogates Do the 'Wetwork' Against Trump Exclusive: Trump Demolishes Biden for Lying About Senate Immigration Plan WATCH: Venezuelan Migrant Plans to Exploit Squatter Laws in United States Supreme Court Lifts Stay on Texas Law that Gives Police Powers to Arrest Migrants at Border Report: McConnell Urges",
+            "sentence_bias_confidence": 0.9529576301574707
+        },
+        {
+            "text": "Kelly: \u2018Confident\u2019 Biden Will Win Arizona with More Votes than 2020     \u00a0   \u00a0    #ContainerW  #ContentW    BREITBART NEWS  Masthead About Us Accessibility Statement Policy Info Terms of Use Privacy Policy Advertise Contact Us Careers Store Get the App Newsletters Send A Tip Sitemap            Copyright \u00a9 2024 Breitbart   #GlobalW",
+            "sentence_bias_confidence": 0.9888488054275513
         }
     ]
 }
