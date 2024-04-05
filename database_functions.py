@@ -147,7 +147,7 @@ class DatabaseFunctions:
 
       except:
         print("database sentence insertion messed up")
-    print("inserted")
+    # print("inserted")
 
 
 if __name__ == "__main__":
