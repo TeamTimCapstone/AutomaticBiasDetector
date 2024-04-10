@@ -1,86 +1,36 @@
 {
     "label": "Biased",
-    "article_url": "https://www.foxnews.com/politics/a-lawsuit-challenging-bidens-get-out-the-vote-executive-order-will-soon-head-to-the-supreme-court",
-    "article_bias_confidence": 0.6969374418258667,
-    "biased_sentence_count": 18,
+    "article_url": "https://www.breitbart.com/economy/2024/04/10/open-wide-bidenflation-pushes-up-dental-care-eye-care-personal-care-products/",
+    "article_bias_confidence": 0.9834752082824707,
+    "biased_sentence_count": 7,
     "bias_info_by_sentence": [
         {
-            "text": "Conflicts                       Terrorism                       Disasters                       Global Economy                       Environment                       Religion                       Scandals                     Opinion                     Media                       FOX Nation Coverage                     Entertainment                       Celebrity News                       Movies                       TV News                       Music News",
-            "sentence_bias_confidence": 0.9808946251869202
+            "text": "Prices of dental care, eye care, and personal care have increased since 2023, March Consumer Price Index (CPI) data  revealed  Wednesday:  \u2014 Dental services:\u00a0 Up 4",
+            "sentence_bias_confidence": 0.8229612708091736
         },
         {
-            "text": "Quotes displayed in real-time or delayed by at least 15 minutes",
-            "sentence_bias_confidence": 0.9787651896476746
+            "text": "0 percent since February 2024  \u2014 Personal care products:\u00a0 Up 3",
+            "sentence_bias_confidence": 0.8058155179023743
         },
         {
-            "text": "Market data provided by       Factset",
-            "sentence_bias_confidence": 0.9775596857070923
+            "text": "2 percent since February 2024  Overall, the consumer price index\u00a0 rose \u00a00",
+            "sentence_bias_confidence": 0.8329969048500061
         },
         {
-            "text": "Mutual Fund and ETF data provided by       Refinitiv Lipper",
-            "sentence_bias_confidence": 0.8110944628715515
+            "text": "Core inflation, which excludes food and energy, rose 0",
+            "sentence_bias_confidence": 0.8516251444816589
         },
         {
-            "text": "Facebook   Twitter   Instagram   RSS   Email                             Supreme Court   Biden\u2019s get-out-the-vote executive order challenged, heading to Supreme Court: 'Target welfare populations'   'This is, by far, the most important legal issue in the country heading into November': watchdog group CEO           By       Brianna Herlihy       Fox News           Published        April 4, 2024 4:00am EDT     Facebook   Twitter   Flipboard   Comments   Print   Email     close             Video   Poll",
-            "sentence_bias_confidence": 0.9583806395530701
+            "text": "com/YfTcMe4Bel  \u2014 RNC Research (@RNCResearch)  April 10, 2024  Wendell Husebo is a political reporter with Breitbart News and a former GOP War Room Analyst",
+            "sentence_bias_confidence": 0.9950287938117981
         },
         {
-            "text": "DOJ 'STONEWALLING' REQUESTS FOR DETAILS ON IMPLEMENTATION OF BIDEN'S 'FEDERAL ELECTION SCHEME'     The Supreme Court   (AP Photo/Jacquelyn Martin/File)         \"We think it's really important for President Biden to be held accountable,\" Erick Kaardal, attorney for the lawmakers, told Fox News Digital in an interview",
-            "sentence_bias_confidence": 0.8683043718338013
+            "text": "He is the author of\u00a0 Politics of Slave Morality",
+            "sentence_bias_confidence": 0.9777472615242004
         },
         {
-            "text": "\"For him to violate such a big law when all the little people have to follow the laws, even little laws \u2026 it\u2019s clear President Biden has issued an executive order without congressional enactments to get himself re-elected",
-            "sentence_bias_confidence": 0.8457854986190796
-        },
-        {
-            "text": "It\u2019s ridiculous,\" Kaardal said",
-            "sentence_bias_confidence": 0.990022599697113,
-            "biased_words": [
-                "ridiculous"
-            ]
-        },
-        {
-            "text": "Richards/AFP via Getty Images/File) Kaardal argued in legal filings that the executive order in turn \u2013 among other things \u2013 directed the Department of Health and Human Services to facilitate voter registrations; the Department of Housing and Urban Development to instruct more than 3,000 public housing authorities to facilitate registration drives in those units;\u00a0the Department of Education to push state schools to register students; and the U",
-            "sentence_bias_confidence": 0.9819793701171875
-        },
-        {
-            "text": "\"\u00a0 Tarren Bragdon, president and CEO of the Foundation for Government Accountability (FGA), which filed an amicus brief in the case, said that \"it\u2019s no wonder Team Biden is using their authority and resources to target welfare populations with a federally funded get-out-the-vote effort",
-            "sentence_bias_confidence": 0.9398074746131897
-        },
-        {
-            "text": "\"[D]emocrats see a massive advantage among voters enrolled in welfare programs like food stamps and Medicaid",
-            "sentence_bias_confidence": 0.99006187915802,
-            "biased_words": [
-                "massive"
-            ]
-        },
-        {
-            "text": "In fact, Democrats see their margins increase by more than 30 points among voters enrolled in welfare compared to low-income voters who have never been on welfare,\" the study says",
-            "sentence_bias_confidence": 0.9267950057983398
-        },
-        {
-            "text": "Get the latest updates from the 2024 campaign trail, exclusive interviews and more Fox News politics content",
-            "sentence_bias_confidence": 0.9691043496131897
-        },
-        {
-            "text": "Crime                       Military                       Education                       Terror                       Immigration                       Economy                       Personal Freedoms                       Fox News Investigates                       Digital Originals                     Politics                       Executive                       Senate                       House                       Judiciary                       Foreign Policy",
-            "sentence_bias_confidence": 0.9141820669174194
-        },
-        {
-            "text": "Conflicts                       Terrorism                       Disasters                       Global Economy                       Environment                       Religion                       Scandals                     Opinion                     Media                       FOX Nation Coverage                     Entertainment                       Celebrity News                       Movies                       TV News                       Music News",
-            "sentence_bias_confidence": 0.9808946251869202
-        },
-        {
-            "text": "Quotes displayed in real-time or delayed by at least 15 minutes",
-            "sentence_bias_confidence": 0.9787651896476746
-        },
-        {
-            "text": "Market data provided by         Factset",
-            "sentence_bias_confidence": 0.9775596857070923
-        },
-        {
-            "text": "Mutual Fund and ETF data provided by         Refinitiv Lipper",
-            "sentence_bias_confidence": 0.8110944628715515
+            "text": "2024 Election Economy Politics Bidenomics inflation Joe Biden            COMMENTS  Please  let us know  if you're having issues with commenting",
+            "sentence_bias_confidence": 0.9484442472457886
         }
     ]
 }

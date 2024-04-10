@@ -26,5 +26,11 @@ def scrape(url):
         if t.parent.name not in blacklist:
             output_with_newlines += '{} '.format(t)
             output = ''.join(output_with_newlines.splitlines())
+    
+    #try:
+     #   output = output[output.find('.')+1:]
+    #    output = output[:output.rfind('.')+1]
+    #except:
+     #   pass
 
     return output
