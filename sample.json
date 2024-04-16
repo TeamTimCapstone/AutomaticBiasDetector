@@ -1,36 +1,7 @@
 {
     "label": "Biased",
-    "article_url": "https://www.breitbart.com/economy/2024/04/10/open-wide-bidenflation-pushes-up-dental-care-eye-care-personal-care-products/",
-    "article_bias_confidence": 0.9834752082824707,
-    "biased_sentence_count": 7,
-    "bias_info_by_sentence": [
-        {
-            "text": "Prices of dental care, eye care, and personal care have increased since 2023, March Consumer Price Index (CPI) data  revealed  Wednesday:  \u2014 Dental services:\u00a0 Up 4",
-            "sentence_bias_confidence": 0.8229612708091736
-        },
-        {
-            "text": "0 percent since February 2024  \u2014 Personal care products:\u00a0 Up 3",
-            "sentence_bias_confidence": 0.8058155179023743
-        },
-        {
-            "text": "2 percent since February 2024  Overall, the consumer price index\u00a0 rose \u00a00",
-            "sentence_bias_confidence": 0.8329969048500061
-        },
-        {
-            "text": "Core inflation, which excludes food and energy, rose 0",
-            "sentence_bias_confidence": 0.8516251444816589
-        },
-        {
-            "text": "com/YfTcMe4Bel  \u2014 RNC Research (@RNCResearch)  April 10, 2024  Wendell Husebo is a political reporter with Breitbart News and a former GOP War Room Analyst",
-            "sentence_bias_confidence": 0.9950287938117981
-        },
-        {
-            "text": "He is the author of\u00a0 Politics of Slave Morality",
-            "sentence_bias_confidence": 0.9777472615242004
-        },
-        {
-            "text": "2024 Election Economy Politics Bidenomics inflation Joe Biden            COMMENTS  Please  let us know  if you're having issues with commenting",
-            "sentence_bias_confidence": 0.9484442472457886
-        }
-    ]
+    "article_url": "https://www.nytimes.com/2024/04/15/nyregion/trump-hush-money-trial-jury.html",
+    "article_bias_confidence": 0.919962465763092,
+    "biased_sentence_count": 0,
+    "bias_info_by_sentence": []
 }
