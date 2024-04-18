@@ -1,12 +1,14 @@
 body, html {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 .App {
   background-image: url('../public/worldbackground.jpg'); /* Adjust path as needed */
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: black;
   width: 350px; /* Fixed width for popup */
   height: 500px; /* Fixed height for popup */
   font-family: 'Madimi One', sans-serif;
