@@ -1,5 +1,7 @@
 # Imports
 
+import sys
+
 from Dbias.bias_classification import *
 from Dbias.bias_recognition import *
 
@@ -19,11 +21,11 @@ import pickle
 
 # Thresholds for whether or not bias should be considered for articles and sentences
 # and other information needed for bias detection
-article_bias_threshold = 0.8
+article_bias_threshold = 0.65
 sentence_bias_threshold = 0.8
 group_bias_threshold = 0.6
 
-def get_bias_info(article_url, article_text="", website_url="", groups=["woman", "african", "asian", "lgbt", "hispanic"]):
+def get_bias_info(article_url="", article_text="", website_url="", groups=["woman", "african", "asian", "lgbt", "hispanic"]):
 
   nlp = None
   pipe = None
@@ -66,6 +68,8 @@ def get_bias_info(article_url, article_text="", website_url="", groups=["woman",
 
   if article_text == "":
     try:
+      if article_url == "":
+        article_url = str(sys.argv[1])
       article_text = scrape(article_url)
     except:
       article_bias_info["ERROR"] = "Invalid URL"
@@ -77,7 +81,7 @@ def get_bias_info(article_url, article_text="", website_url="", groups=["woman",
     return previous_analysis
 
   article_text = article_text.replace("\n", "")
-  print(article_text)
+  # print(article_text)
   # Classify article bias, find label confidence and if is is classified as biased
   # Characters 0 - 2435 appears to be the sweet spot
   try:
@@ -93,7 +97,8 @@ def get_bias_info(article_url, article_text="", website_url="", groups=["woman",
 
   # If article not biased, stop
   if article_bias_confidence < article_bias_threshold or not article_is_biased:
-    print("Insufficient bias detected.")
+    # print("Insufficient bias detected.")
+    article_bias_info["label"] = "Not Biased"
     return json.dumps(article_bias_info)
 
   website_bias = dbf.get_website_bias_rating(article_url=article_url)
@@ -179,3 +184,6 @@ def get_bias_info(article_url, article_text="", website_url="", groups=["woman",
 
   dbf.json_string_insert(json_bias_data)
   return json_bias_data
+
+if __name__ == "__main__":
+  print(get_bias_info())

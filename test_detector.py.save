@@ -4,7 +4,7 @@ import time
 if __name__ == "__main__":
 
   start = time.time()
-  print(get_bias_info("https://www.breitbart.com/entertainment/2023/10/31/nolte-guardian-whines-about-incels-embracing-fight-club-1999/"))
+  print(get_bias_info("https://w.foxnews.com/politics/aoc-takes-heat-over-rico-crime-comment-biden-impeachment-probe-hearing"))
   end = time.time()
   print("Total time (seconds) is:")
   print(end-start)
