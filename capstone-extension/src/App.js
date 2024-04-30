@@ -19,7 +19,7 @@ function App() {
       const currentTabUrl = tabs[0].url; // Get URL of the current active tab
 
       try {
-        const response = await fetch('http://3.142.197.82:5000/biasdetector', {
+        const response = await fetch('http://18.119.105.97:5000/biasdetector', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
