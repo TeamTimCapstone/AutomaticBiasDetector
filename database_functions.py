@@ -103,7 +103,7 @@ class DatabaseFunctions:
       if article_instance != []:
         return
     except:
-      pass
+      return "URL too long"
       
   # Check for no bias; return
     if data["label"] != "Biased":
