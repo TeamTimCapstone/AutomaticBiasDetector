@@ -96,11 +96,15 @@ class DatabaseFunctions:
     self.connection.commit()
     '''
   # Check for duplicate article
-    self.cursor.execute('SELECT * FROM Article where article_url = "%s";' % (data["article_url"]))
-    article_instance = self.cursor.fetchall()
-    if article_instance != []:
-      return
-
+  # This is also a check for article_url being short enough to fit in the database
+    try:
+      self.cursor.execute('SELECT * FROM Article where article_url = "%s";' % (data["article_url"]))
+      article_instance = self.cursor.fetchall()
+      if article_instance != []:
+        return
+    except:
+      pass
+      
   # Check for no bias; return
     if data["label"] != "Biased":
       return 
