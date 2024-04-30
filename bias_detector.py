@@ -15,10 +15,6 @@ from web_scraper import scrape
 import re
 import pickle
 
-# Load NLP and Zero-Shot Classification requirements
-#nlp = spacy.load("en_core_web_lg")
-#pipe = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-
 # Thresholds for whether or not bias should be considered for articles and sentences
 # and other information needed for bias detection
 article_bias_threshold = 0.65
@@ -60,7 +56,6 @@ def get_bias_info(article_url="", article_text="", website_url="", groups=["woma
 
     
 
-  # groups = ["woman", "african", "asian", "lgbt", "hispanic"]
   # Variables to hold info on bias of sentences
   article_bias_info = {}
   biased_sentence_info = []
@@ -81,7 +76,7 @@ def get_bias_info(article_url="", article_text="", website_url="", groups=["woma
     return previous_analysis
 
   article_text = article_text.replace("\n", "")
-  # print(article_text)
+ 
   # Classify article bias, find label confidence and if is is classified as biased
   # Characters 0 - 2435 appears to be the sweet spot
   try:
