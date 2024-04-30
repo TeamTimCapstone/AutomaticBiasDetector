@@ -1,0 +1,84 @@
+{
+    "label": "Biased",
+    "article_url": "https://fortune.com/2024/04/29/female-ceos-turnover-glass-ceiling-cliff-russell-reynolds-turnover-report/",
+    "article_bias_confidence": 0.9902786612510681,
+    "biased_sentence_count": 15,
+    "bias_info_by_sentence": [
+        {
+            "text": "Only 7% of CEOs appointed so far this year have been women | Fortune Home News Tech Finance Leadership Well Recommends Fortune 500 Home Page Already have an account? SIGN IN SEARCH Subscribe Now Sections FORTUNE 500 News Europe Asia Tech AI Finance Personal Finance Real Estate Crypto Leadership Success Well Life Health Mind Family Aging Well Recommends Credit Cards Banking Best High-Yield Savings Accounts Best Savings Accounts Best CD Rates Best Money Market Accounts Savings Calculator Insurance Mortgages",
+            "sentence_bias_confidence": 0.9902786612510681,
+            "biased_groups": [
+                "woman",
+                "asian"
+            ]
+        },
+        {
+            "text": "Shannon Fagan - Getty Images Even in 2024, there\u2019s  no shortage of obstacles  keeping women from leadership positions",
+            "sentence_bias_confidence": 0.9905405044555664,
+            "biased_groups": [
+                "woman"
+            ]
+        },
+        {
+            "text": "The problem of short female CEO tenures doesn\u2019t appear to have notably worsened since the pandemic, Wiggins says",
+            "sentence_bias_confidence": 0.9936044812202454
+        },
+        {
+            "text": "Rather, the greater number of women in leadership at any given time is just making the problem starker",
+            "sentence_bias_confidence": 0.9921525120735168,
+            "biased_words": [
+                "starker"
+            ]
+        },
+        {
+            "text": "\u201cWe know that the first two years are critical to success,\u201d he goes on",
+            "sentence_bias_confidence": 0.8821584582328796
+        },
+        {
+            "text": "That means a CEO who, in another macroeconomic landscape, might have had some wiggle room to establish themselves or roll out their plans, these days is forced to cobble together a team quickly",
+            "sentence_bias_confidence": 0.9684514403343201
+        },
+        {
+            "text": "Russell Reynolds, for its part, encourages a bit more leniency on the part of boards; no one wins when a string of CEOs depart before they have a chance to make things better",
+            "sentence_bias_confidence": 0.9589627385139465,
+            "biased_words": [
+                "leniency"
+            ]
+        },
+        {
+            "text": "That\u2019s alongside the fact that advancements are slowly, steadily coming",
+            "sentence_bias_confidence": 0.9727774262428284
+        },
+        {
+            "text": "For the first time last year,  over 10%  of CEOs of Fortune 500 companies were women",
+            "sentence_bias_confidence": 0.9611855149269104
+        },
+        {
+            "text": "\u201cDiverse leaders have had to continuously reinvent and adapt at a personal level throughout their careers,\u201d  Accenture  CEO Julie Sweet  told  Fortune\u2019s   Emma Hinchliffe",
+            "sentence_bias_confidence": 0.8453968167304993
+        },
+        {
+            "text": "\u201d\u00a0  Plus, with adequate attention to fostering and uplifting female talent, the Fortune 500 could stand to double its percentage of women leaders within five years, Jane Stevenson, global leader for the succession practice at consultancy  Korn Ferry , told Hinchliffe",
+            "sentence_bias_confidence": 0.8933795690536499,
+            "biased_words": [
+                "uplifting"
+            ]
+        },
+        {
+            "text": "When women lead, everyone wins",
+            "sentence_bias_confidence": 0.986525297164917
+        },
+        {
+            "text": "Latest in Success 0 minutes ago Success  -  the travel industry Business travel survives the Zoom era, as leaders jump back on flights BY Chloe Berger 0 minutes ago Success  -  Most Powerful Women Only 7% of CEOs appointed so far this year have been women BY Jane Thier 0 minutes ago Success  -  Education Gen Z\u2019s class of 2024 looks back on a seemingly cursed run of history: \u2018It\u2019s crazy because I remember starting freshman year with the start of the Russian invasion of Ukraine\u2019 BY Julie Watson ,  Leslie Am",
+            "sentence_bias_confidence": 0.9028940200805664
+        },
+        {
+            "text": "economy is actually a \u2018wolf in sheep\u2019s clothing\u2019 as the weak GDP report masks underlying strength, Wells Fargo says BY 0 minutes ago Finance \u2018We expect Powell to make a hawkish pivot\u2019\u2014Fed meeting to headline busy week for global markets BY 0 minutes ago Retail Pottery Barn parent Williams-Sonoma fined for marketing furniture as \u2018crafted\u2019 in the U",
+            "sentence_bias_confidence": 0.9905975461006165
+        },
+        {
+            "text": "when it was made in China BY Rankings 100 Best Companies Fortune 500 Global 500 Fortune 500 Europe Most Powerful Women Future 50 World\u2019s Most Admired Companies See All Rankings Sections Finance Leadership Success Tech Asia Europe Environment Fortune Crypto Health Well Retail Lifestyle Politics Newsletters Magazine Features Commentary MPW CEO Initiative Conferences Personal Finance Recommends Coupons Customer Support Frequently Asked Questions Customer Service Portal Privacy Policy Terms of Use Single Issu",
+            "sentence_bias_confidence": 0.9908946752548218
+        }
+    ]
+}
